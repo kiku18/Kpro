@@ -81,7 +81,7 @@ def Ref():
     Total.set(OverAllCost)
 
 
-    conn=sqlite3.connect(r'C:\Users\kumar\hms.db')
+    conn=sqlite3.connect('rC:\Users\kumar\hms.db')
     cur=conn.cursor()
     csql="create table if not exists bills (orderno text,fries_meal int,lunch_meal int,burger_meal int,pizza_meal int,cheese_burger int,drinks int,cost text,service_charge text,Tax text,Subtotal text,Total text)"
     cur.execute(csql)
